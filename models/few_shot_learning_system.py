@@ -1,12 +1,9 @@
 import os
 
 import numpy as np
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
 import torch.optim as optim
 from models.model import *
-from meta_neural_network_architectures import VGGReLUNormNetwork, ResNet12, MetaLossNetwork, LossAdapter
+from models.meta_neural_network_architectures import MetaLossNetwork, LossAdapter
 from inner_loop_optimizers import LSLRGradientDescentLearningRule
 
 

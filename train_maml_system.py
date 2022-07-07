@@ -1,8 +1,7 @@
-from data import MetaLearningSystemDataLoader
+from models.data import MetaLearningSystemDataLoader
 from experiment_builder import ExperimentBuilder
-from few_shot_learning_system import MAMLFewShotClassifier
+from models.few_shot_learning_system import MAMLFewShotClassifier
 from utils.parser_utils import get_args
-from utils.dataset_tools import maybe_unzip_dataset
 
 # Combines the arguments, model, data and experiment builders to run an experiment
 args, device = get_args()
