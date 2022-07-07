@@ -78,7 +78,7 @@ class FewShotLearningDatasetParallel(Dataset):
         """
 
         dataset_splits = dict()
-        train_data = joblib.load("../datasets/ddi2013/meta_train.pkl")
+        train_data = joblib.load("datasets/ddi2013/meta_train.pkl")
         for k,v in train_data.items():
             #todo
             value = self.get_df2data(v)
@@ -87,7 +87,7 @@ class FewShotLearningDatasetParallel(Dataset):
             else:
                 dataset_splits["train"][k] = value
 
-        val_data = joblib.load("../datasets/ddi2013/meta_val.pkl")
+        val_data = joblib.load("datasets/ddi2013/meta_val.pkl")
         for k, v in val_data.items():
             #todo
             value = self.get_df2data(v)
@@ -96,7 +96,7 @@ class FewShotLearningDatasetParallel(Dataset):
             else:
                 dataset_splits["val"][k] = value
 
-        test_data = joblib.load("../datasets/ddi2013/meta_test.pkl")
+        test_data = joblib.load("datasets/ddi2013/meta_test.pkl")
         for k, v in test_data.items():
             # todo
             value = self.get_df2data(v)

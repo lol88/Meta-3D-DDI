@@ -4,7 +4,7 @@ import numpy as np
 import torch.optim as optim
 from models.model import *
 from models.meta_neural_network_architectures import MetaLossNetwork, LossAdapter
-from inner_loop_optimizers import LSLRGradientDescentLearningRule
+from models.inner_loop_optimizers import LSLRGradientDescentLearningRule
 
 
 def set_torch_seed(seed):
